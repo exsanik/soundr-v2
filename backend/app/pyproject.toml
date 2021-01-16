@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sounderv2_api"
+version = "0.1.0"
+description = "App for spotify match"
+authors = ["Nikita Turkin"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+spotipy = "^2.16.1"
+python-dotenv = "^0.15.0"
+SQLAlchemy = "^1.3.22"
+cryptography = "^3.3.1"
+psycopg2 = "^2.8.6"
+alembic = "^1.4.3"
+python-jose = {extras = ["cryptography"], version = "^3.2.0"}
+pandas = "^1.2.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.790"
+autopep8 = "^1.5.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
